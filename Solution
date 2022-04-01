@@ -1,0 +1,45 @@
+using System;
+using System.Linq;
+using System.Numerics;
+using System.Text;
+using System.Collections.Generic;
+using System.Collections;
+
+
+namespace AssociativeArrays
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string first = Console.ReadLine();
+            string second = Console.ReadLine();
+
+            //ddabcffffff
+
+
+            while (true)
+            {
+                int index = second.IndexOf(first);
+
+                if (index == -1)
+                {
+                    break;
+                }
+                else
+                {
+
+                    second = second.Remove(index, first.Length);
+
+
+                }
+
+
+            }
+
+            Console.WriteLine(second);
+
+        }
+    }
+}
